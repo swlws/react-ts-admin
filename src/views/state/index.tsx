@@ -26,6 +26,7 @@ export default function StateManager() {
         {["redux", "mobx", "dva"].map((v) => {
           return (
             <div
+              key={v}
               className={mode === v ? style.active : ""}
               onClick={() => setMode(v)}
             >
