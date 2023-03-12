@@ -4,11 +4,16 @@ A simple project with react-ts
 
 # 1. Create Project
 
-## 1.1 create-react-app
+## 1.1 [create-react-app](https://create-react-app.dev/docs/getting-started)
 
 ```bash
 pnpm dlx create-react-app react-ts-admin --template typescript
 ```
+
+[Selecting a template](https://create-react-app.dev/docs/getting-started#selecting-a-template)
+
+- typescript
+- redux
 
 ## 1.2 [dvajs](https://github.com/dvajs/dva)
 
