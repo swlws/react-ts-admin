@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "node-sass": "^8.0.0"
   }
 }

@@ -95,3 +95,13 @@ import "antd/dist/reset.css";
 ## 6.2 [Ant Motion](https://motion.ant.design/index-cn)
 
 一个高效的动效库。
+
+# 7. [Craco](https://craco.js.org/)
+
+To customize most things when using Create React App, you can eject. However, you'll then need to maintain every configuration and script yourself, which can be a bit annoying. CRACO, which stands for Create React App Configuration Override, allows you to get all of the benefits of Create React App without ejecting. Customize your configurations ESLint, Babel, PostCSS, and many more with just a single configuration file at the root of your project.
+
+```bash
+# install craco
+# https://craco.js.org/docs/getting-started/
+pnpm add @craco/craco -D
+```
