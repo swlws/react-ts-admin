@@ -62,12 +62,36 @@ pnpm add @reduxjs/toolkit react-redux
 
 MobX is a simple, scalable and battle tested state management solution. [Ten minute introduction to MobX and React](https://mobx.js.org/getting-started)
 
+Making React reactive by mobx.
+
 # 5. Request Lib
 
 ## 5.1 axios
 
-## 5.2 ahooks
+# 6. Hook Lib
 
-# 6. UI
+## 6.1 [ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)
 
-## 6.1 antd
+React 中常用的 hooks 库，包含多种尝尽中使用的 hook。如：
+
+- useRequest，一个强大的异步数据管理的 Hook。
+
+# 6. UI Lib
+
+## 6.1 [antd](https://ant.design/components/overview-cn)
+
+一个企业级 React UI 库，分别有 react、vue、angular 版本。
+
+```bash
+# used in react
+> pnpm add antd
+```
+
+```ts
+// 引入css样式
+import "antd/dist/reset.css";
+```
+
+## 6.2 [Ant Motion](https://motion.ant.design/index-cn)
+
+一个高效的动效库。

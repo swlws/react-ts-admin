@@ -1,0 +1,27 @@
+.container {
+  > aside {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #e8e8e8;
+
+    > span {
+      color: #333;
+      font-size: 20px;
+    }
+
+    > div {
+      cursor: pointer;
+      margin: 0 10px;
+      padding: 5px 10px;
+
+      border: 1px solid #e8e8e8;
+      border-radius: 5px;
+    }
+  }
+}
+
+.active {
+  color: #009afe;
+}
