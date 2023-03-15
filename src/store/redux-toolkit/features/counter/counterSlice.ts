@@ -6,6 +6,12 @@ function fetchCount(amount = 1) {
   );
 }
 
+/**
+ * 生成一个异步action
+ * 每个异步action会有自己独立的type
+ * 所有的异步action处理完成后，会进入extraReducers
+ * 也就是，可以定义多个异步action，这些异步action会被extraReducers流程包裹
+ */
 export const incrementAsync = createAsyncThunk(
   "counter/fetchCount",
   async (amount: number) => {

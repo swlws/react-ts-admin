@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReduxPage from "./redux/index";
+import ReduxToolkitPage from "./redux-toolkit/index";
 
 import style from "./index.module.scss";
 
@@ -13,6 +14,8 @@ export default function StateManager() {
   const stateBlock = () => {
     if (mode === "redux") {
       return <ReduxPage />;
+    } else if (mode === "redux-toolkit") {
+      return <ReduxToolkitPage />;
     }
 
     return null;
@@ -23,7 +26,7 @@ export default function StateManager() {
       <aside>
         <span>State Management: </span>
 
-        {["redux", "mobx", "dva"].map((v) => {
+        {["redux", "redux-toolkit", "mobx", "dva"].map((v) => {
           return (
             <div
               key={v}

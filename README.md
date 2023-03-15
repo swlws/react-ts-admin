@@ -60,7 +60,7 @@ pnpm add node-sass -D
 # reduxjs为状态管理库
 # react-redux用于连接reduxjs与react的连接
 # react-thunk为中间件，使用react-redux具备异步操作的能力
-pnpm add @reduxjs/toolkit react-redux
+pnpm add redux react-redux @reduxjs/toolkit
 ```
 
 ## 4.2 [mobx](https://www.mobxjs.com/)
