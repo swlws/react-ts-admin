@@ -16,9 +16,14 @@ const initialState = { value: 0 };
  *
  */
 export default function counterReducer(state = initialState, action: any) {
-  console.log(action);
+  console.log("counterReducer", action);
   switch (action.type) {
     case COUNTER_INCREMENT:
+      // 错误写法，value的值的确是变更了，但不会触发UI的变化
+      // 数据对比采用的是弱比对，会被误判为没有变更
+      // state.value = state.value + action.payload;
+
+      // 正确写法
       return { ...state, value: state.value + action.payload };
     case COUNTER_DECREMENT:
       return { ...state, value: state.value - action.payload };
