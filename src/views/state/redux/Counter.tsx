@@ -28,14 +28,8 @@ const mapDispatchToProps = (dispatch: any, ownProps: any) => {
   };
 };
 
-interface Props {
-  value: number;
-  list: number[];
-  increment: any;
-  decrement: any;
-  push: any;
-  pop: any;
-}
+type Props = ReturnType<typeof mapStateToProps> &
+  ReturnType<typeof mapDispatchToProps>;
 
 function Counter(props: Props) {
   return (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReduxPage from "./redux/index";
 import ReduxToolkitPage from "./redux-toolkit/index";
+import Rematch from "./rematch/index";
 
 import style from "./index.module.scss";
 
@@ -16,6 +17,8 @@ export default function StateManager() {
       return <ReduxPage />;
     } else if (mode === "redux-toolkit") {
       return <ReduxToolkitPage />;
+    } else if (mode === "rematch") {
+      return <Rematch />;
     }
 
     return null;
@@ -26,7 +29,7 @@ export default function StateManager() {
       <aside>
         <span>State Management: </span>
 
-        {["redux", "redux-toolkit", "mobx"].map((v) => {
+        {["redux", "redux-toolkit", "rematch", "mobx"].map((v) => {
           return (
             <div
               key={v}

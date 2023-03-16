@@ -25,7 +25,7 @@ export const DISPATCH_DECREMENT = (dispatch: any) => (num: number) =>
  * @param dispatch
  * @returns
  */
-export const DISPATCH_RANDOM_PUSH = (dispatch: any) => (num: number) =>
+export const DISPATCH_RANDOM_PUSH = (dispatch: any) => () =>
   dispatch({ type: RANDOM_PUSH });
 
 /**
@@ -34,5 +34,5 @@ export const DISPATCH_RANDOM_PUSH = (dispatch: any) => (num: number) =>
  * @param dispatch
  * @returns
  */
-export const DISPATCH_RANDOM_POP = (dispatch: any) => (num: number) =>
+export const DISPATCH_RANDOM_POP = (dispatch: any) => () =>
   dispatch({ type: RANDOM_POP });
