@@ -26,7 +26,7 @@ export default function StateManager() {
       <aside>
         <span>State Management: </span>
 
-        {["redux", "redux-toolkit", "mobx", "dva"].map((v) => {
+        {["redux", "redux-toolkit", "mobx"].map((v) => {
           return (
             <div
               key={v}
